@@ -9,11 +9,15 @@ int main() {
 
   while (true) {
     cout << "$ ";
-    string prompt;
-    cin >> prompt;
-    if (prompt == "exit")
-      break;
+    string input;
+    cin >> input;
 
-    cout << prompt << ": command not found" << endl;
+    if (input == "exit") {
+      break;
+    } else if (input.substr(0, 5) == "echo ") {
+      std::cout << input.substr(5) << std::endl;
+    } else {
+      std::cout << input << ": command not found" << std::endl;
+    }
   }
  }
