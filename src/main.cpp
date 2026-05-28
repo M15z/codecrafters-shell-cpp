@@ -7,9 +7,10 @@ int main() {
   std::cout << std::unitbuf;
   std::cerr << std::unitbuf;
 
-  // TODO: Uncomment the code below to pass the first stage
-  std::cout << "$ ";
-  std::string prompt;
-  std::cin >> prompt;
-  std::cout << prompt << ": command not found";
-}
+  while (true) {
+    cout << "$ ";
+    string prompt;
+    cin >> prompt;
+    cout << prompt << ": command not found" << endl;
+  }
+ }
