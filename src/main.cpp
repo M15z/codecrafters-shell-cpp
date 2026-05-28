@@ -10,7 +10,7 @@ int main() {
   while (true) {
     cout << "$ ";
     string input;
-    cin >> input;
+    getline(cin, input); 
 
     if (input == "exit") {
       break;
