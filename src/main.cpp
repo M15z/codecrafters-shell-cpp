@@ -31,7 +31,7 @@ int main() {
           if (isBuiltInCommand(input.substr(5)))
               cout << input.substr(5) << " is a shell builtin" << endl;
           else
-              std::cout << input.substr(5) << ": command not found" << std::endl;
+              std::cout << input.substr(5) << ": not found" << std::endl;
     }
     else {
       std::cout << input << ": command not found" << std::endl;
