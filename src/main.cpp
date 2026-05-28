@@ -11,6 +11,9 @@ int main() {
     cout << "$ ";
     string prompt;
     cin >> prompt;
+    if (prompt == "exit")
+      break;
+
     cout << prompt << ": command not found" << endl;
   }
  }
